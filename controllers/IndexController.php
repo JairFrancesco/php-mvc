@@ -17,6 +17,7 @@ class IndexController extends MainController
 	// URL will look like this:
 	// http://yourdomain.com/index/test
 	// where 'index' is the controller and 'test' is the method.
+	// If a controller is not specified like http://yourdomain.com, IndexController is called.
 	// Note that 'index' was set to use IndexController by default.
 	// All other controllers you create must have filenames that are the same as its class name.
 	// So if you create a controller named 'Home', you must save it in a file called Home.php;
@@ -26,7 +27,7 @@ class IndexController extends MainController
 		);
 
 		// load your view file using the $this->loadView() method
-		// the first argument is the viewfile and the second is the data to pass
+		// the first argument is the viewfile (without the extension) and the second is the data to pass
 		$this->loadView('testview', $data);
 	}
 }

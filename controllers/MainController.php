@@ -57,6 +57,7 @@ abstract class MainController
 		return $data;
 	}
 
+	// this is the method to call when loading the view file
 	protected function loadView($view_file, $data = array()) {
 		include $this->config->views_dir . $view_file . '.php'; 
 	}
