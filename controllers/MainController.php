@@ -2,7 +2,10 @@
 abstract class MainController 
 {
 	protected $uri_string = '';
+	protected $config;
+
 	function __construct($config) {
+		$this->config = $config;
 		$p = array();
 		if ($config) {
 			$p = $this->uriToArr($config->func);
@@ -52,6 +55,10 @@ abstract class MainController
 		}
 
 		return $data;
+	}
+
+	protected function loadView($view_file, $data = array()) {
+		include $this->config->views_dir . $view_file . '.php'; 
 	}
 }
 ?>

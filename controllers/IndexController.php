@@ -21,7 +21,13 @@ class IndexController extends MainController
 	// All other controllers you create must have filenames that are the same as its class name.
 	// So if you create a controller named 'Home', you must save it in a file called Home.php;
 	public function test() {
-		echo 'hello this is test';
+		$data = array(
+			'message' => 'This is the index testview file'
+		);
+
+		// load your view file using the $this->loadView() method
+		// the first argument is the viewfile and the second is the data to pass
+		$this->loadView('testview', $data);
 	}
 }
 ?>
