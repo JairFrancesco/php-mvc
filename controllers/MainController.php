@@ -14,7 +14,7 @@ abstract class MainController
 	}
 
 	// force extending class to define index()
-	abstract public function index($args);
+	abstract public function index();
 
 	// return the URI
 	public function getURI() {
