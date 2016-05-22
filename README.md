@@ -1,1 +1,1 @@
-# php-mvc
+Lightweight, fully object-oriented PHP-MVC Boilerplate
