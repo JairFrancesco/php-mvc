@@ -1,3 +1,10 @@
+<!--
+ * PHP MVC Boilerplate V1.0
+ * Author: Rudem Labial
+ *
+ * Date: 2016-05-23
+ * This application is free to use by anyone!
+ -->
 <?php
 require_once('includes/config.php');
 
