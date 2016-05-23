@@ -24,9 +24,9 @@ class IndexController extends MainController
 	// So if you create a controller named 'Home', you must save it in a file called Home.php;
 	public function test() {
 		// To instantiate your model class, use the method $this->model('model_name')
-		$user = $this->model('User');
+		$user = $this->model('User_model');
 		$user->setUser('Norton');
-
+		
 		$data = array(
 			'message' => 'This is the index testview file',
 			'welcome' => 'Welcome ' . $user->getUser()
