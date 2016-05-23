@@ -1,5 +1,5 @@
 <?php
-require_once($config->controllers_dir . 'MainController.php');
+require_once($config->base_dir . 'core/MainController.php');
 
 class IndexController extends MainController
 {
