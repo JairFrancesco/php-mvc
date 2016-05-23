@@ -62,5 +62,13 @@ abstract class MainController
 		$config = $this->config;
 		include $this->config->views_dir . $view_file . '.php'; 
 	}
+
+	// this is the method to call to load the model
+	protected function model($model_name) {
+		$file = $this->config->models_dir . $model_name . '.php';
+		
+		require_once($file);
+		return new $model_name();
+	}
 }
 ?>
